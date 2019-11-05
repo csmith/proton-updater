@@ -1,0 +1,17 @@
+= Proton updater
+
+Simple program to download the latest version of
+https://github.com/GloriousEggroll/proton-ge-custom/[GloriousEggroll's Proton fork]
+nd extract it to Steam's `compatibilitytools.d` folder.
+
+Usage: proton-updater [--steam-dir /path/to/steam/directory]
+
+If the Steam directory is not specified it defaults to `~/.steam`. If a new update is available, steam will
+be shutdown prior to it being deployed. When the new version is installed -- or if there is no new version
+available -- the updater will exit.
+
+Future enhancements:
+
+ - [ ] Remove old versions when updating
+ - [ ] Support other Proton forks
+ - [ ] Update Steam's config to specify the newer version
