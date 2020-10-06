@@ -2,7 +2,7 @@
 
 Simple program to download the latest version of
 https://github.com/GloriousEggroll/proton-ge-custom/[GloriousEggroll's Proton fork]
-nd extract it to Steam's `compatibilitytools.d` folder.
+and extract it to Steam's `compatibilitytools.d` folder.
 
 Usage: proton-updater [--steam-dir /path/to/steam/directory]
 

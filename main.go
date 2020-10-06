@@ -4,9 +4,10 @@ import (
 	"archive/tar"
 	"compress/gzip"
 	"context"
+	"flag"
 	"fmt"
 	"github.com/csmith/proton-updater/steamclient"
-	"github.com/google/go-github/v28/github"
+	"github.com/google/go-github/v32/github"
 	"io"
 	"log"
 	"net/http"
@@ -15,6 +16,8 @@ import (
 )
 
 func main() {
+	flag.Parse()
+
 	release, url, err := getProtonVersion()
 	if err != nil {
 		log.Fatalf("Unable to find latest release: %s", err.Error())
