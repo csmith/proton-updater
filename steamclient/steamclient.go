@@ -27,7 +27,7 @@ func IsRunning() bool {
 
 	pidContent, err := ioutil.ReadFile(pidFile)
 	if err != nil {
-		log.Fatalf("Error reading PID file, assuming steam is not running: %s", err.Error())
+		log.Printf("Error reading PID file, assuming steam is not running: %s", err.Error())
 		return false
 	}
 
